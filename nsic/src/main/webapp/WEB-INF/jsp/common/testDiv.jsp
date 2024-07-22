@@ -228,6 +228,11 @@
 
 	    //표지
 	    doc.addImage(bg,'PNG', 0, 0, imgWidth, pageHeight, undefined, 'NORMAL');
+	    //const pngImg1 = new Image();
+		//pngImg1.src ='/images/ex2.png';
+		//doc.addImage(pngImg1, 'PNG', 0, 0, imgWidth, pageHeight, undefined, 'NORMAL');
+
+	    
 	    //높이값은 +8 X 0.265
 	    //체크 이미지의 경우 -8 X 0.265
 	    if(parseFloat($('#rpy1').val()) > 0){
@@ -271,6 +276,7 @@
 </head>
 <body>
 <div id="bg" style="border:1px solid black;width:210mm;height:297mm;padding:0px;margin:0px;">
+	<!-- <img src="/images/ex2.png" style="width:210mm;height:297mm;"> -->
 	<img src="/images/bg.jpg" style="width:210mm;height:297mm;">
 </div>
 
@@ -279,7 +285,7 @@
 <select id="sel" style="width:290px;height:30px;">
 	<option value="ex1">일반 텍스트 1</option>
 	<option value="ex2">일반 텍스트 2</option>
-	<option value="ex3">체크박스 예시1</option>
+	<option value="ex3">체크박스 예시1(빨강옵션)</option>
 	<option value="ex4">체크박스 예시2</option>
 	<option value="ex5">SIGN 예시</option>
 </select>
